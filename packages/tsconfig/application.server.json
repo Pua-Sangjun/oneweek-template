@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "incremental": true,
+        "module": "commonjs",
+        "noEmit": false,
+        "sourceMap": false,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "es2017",
+        "outDir": "./dist",
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        "baseUrl": "./",
+        "paths": {
+            "$/*": ["src/*"],
+            "$app/*": ["src/app/*"],
+            "$common/*": ["src/common/*"],
+            "$users/*": ["src/users/*"]
+        }
+    }
+}

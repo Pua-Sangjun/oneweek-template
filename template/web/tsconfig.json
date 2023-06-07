@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "tsconfig/application.json",
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "$/*": ["*"]
+        },
+        "typeRoots": ["./node_modules/@types", "./typings/**/*"],
+        "jsxImportSource": "@emotion/react"
+    },
+    "exclude": ["node_modules", "dist", "out", "__tests__"],
+    "include": ["**/*.ts", "**/*.tsx", "./src/config/*"]
+}

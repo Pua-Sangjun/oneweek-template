@@ -1,0 +1,11 @@
+{
+    "name": "tsconfig",
+    "version": "0.0.0",
+    "private": true,
+    "files": [
+        "application.json",
+        "application.server.json",
+        "component.json",
+        "component.server.json"
+    ]
+}
