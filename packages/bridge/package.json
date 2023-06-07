@@ -1,0 +1,32 @@
+{
+    "name": "@oneweek-react/bridge",
+    "version": "0.0.1",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.mjs",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.mjs",
+            "types": "./dist/cjs/index.d.ts"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "local:pkg": "rollup -w -c",
+        "build-declarations": "tsc --declaration --emitDeclarationOnly --declarationDir dist/cjs",
+        "build:pkg": "pnpm clean && pnpm build-declarations && rollup -c",
+        "clean": "rm -rf dist"
+    },
+    "author": "2-one-week",
+    "license": "ISC",
+    "devDependencies": {
+        "@oneweek-react/theme": "workspace:*",
+        "@oneweek-share/rollup-config": "workspace:*",
+        "@oneweek-share/tsconfig": "workspace:*",
+        "typescript": "^5.1.3",
+        "rollup": "^2.79.1"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "@oneweek-react/component",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.mjs",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.mjs",
+            "types": "./dist/cjs/index.d.ts"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "local:pkg": "rollup -w -c",
+        "build-declarations": "tsc --declaration --emitDeclarationOnly --declarationDir dist/cjs",
+        "build:pkg": "pnpm clean && pnpm build-declarations && rollup -c",
+        "clean": "rm -rf dist"
+    },
+    "author": "2-one-week",
+    "license": "ISC",
+    "devDependencies": {
+        "rollup": "^2.79.1",
+        "@oneweek-share/tsconfig": "workspace:*",
+        "@oneweek-share/rollup-config": "workspace:*"
+    },
+    "dependencies": {
+        "@types/react": ">=18.2.0",
+        "@types/react-dom": ">=18.2.0",
+        "react": ">= 16.14.0",
+        "react-dom": ">= 16.14.0",
+        "typescript": "^5.1.3"
+    }
+}

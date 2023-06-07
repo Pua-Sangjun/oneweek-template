@@ -1,0 +1,13 @@
+{
+    "name": "@oneweek-share/tsconfig",
+    "version": "0.0.0",
+    "private": true,
+    "files": [
+        "application.mobile.json",
+        "application.server.json",
+        "application.web.json",
+        "base.json",
+        "component.json",
+        "component.server.json"
+    ]
+}

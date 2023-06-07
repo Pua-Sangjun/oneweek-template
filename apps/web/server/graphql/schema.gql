@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTempInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Mutation {
+  createTemp(createTempInput: CreateTempInput!): Temp!
+  removeTemp(id: Int!): Temp!
+  updateTemp(updateTempInput: UpdateTempInput!): Temp!
+}
+
+type Query {
+  temp(id: Int!): Temp!
+}
+
+type Temp {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateTempInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}

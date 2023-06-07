@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "@oneweek-share/tsconfig/component.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "rootDir": "./src",
+        "declarationDir": "./dist"
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "dist", "build"]
+}

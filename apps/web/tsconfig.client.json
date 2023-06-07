@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "dist/client",
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "strictNullChecks": true
+    },
+    "exclude": [
+        "server/*.test.ts",
+        "server/**/*.ts",
+        "node_modules",
+        "dist",
+        ".next",
+        "out",
+        "next.config.js",
+        "__tests__"
+    ],
+    "include": ["client/**/*", "../dist/client/types/**/*.ts"]
+}

@@ -1,0 +1,11 @@
+{
+    "extends": ["eslint-config-yceffort/typescript"],
+    "rules": {
+        // for nest server
+        "no-useless-constructor": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "new-cap":"off",
+        "react/react-in-jsx-scope": "off"
+    }
+}
