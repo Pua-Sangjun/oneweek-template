@@ -1,0 +1,14 @@
+{
+    "extends": ["eslint-config-yceffort/typescript"],
+    "rules": {
+        "react/react-in-jsx-scope": ["off"],
+        "require-atomic-updates": ["off"],
+        // for react emotion
+        "react/no-unknown-property": ["error", {"ignore": ["css"]}],
+        "no-console": "error",
+        "no-undef":"off"
+    },
+    "env": {
+        "jest": true
+    }
+}

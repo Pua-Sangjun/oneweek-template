@@ -1,0 +1,21 @@
+{
+    "name": "@oneweek/util",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "local:pkg": "concurrently \"tsc -p tsconfig.json --watch\" \"tsc -p tsconfig.esm.json --watch\"",
+        "build:pkg": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json && minify dist",
+        "clean": "rm -rf ./dist && rm -rf ./node_modules && rm -rf ./.turbo"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@oneweek/minify": "workspace:*",
+        "@types/node": "^18.0.3",
+        "concurrently": "^7.6.0",
+        "tsconfig": "workspace:*"
+    }
+}

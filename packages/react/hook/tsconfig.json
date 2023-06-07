@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "tsconfig/component.json",
+    "compilerOptions": {
+        "declarationDir": "dist",
+        "outDir": "dist",
+        "types": ["react"]
+    },
+    "include": ["./src/*.ts*", "index.ts"],
+    "exclude": ["dist/", "node_modules/"]
+}

@@ -1,0 +1,13 @@
+dist
+package-lock.json
+.next
+
+# /src/assets 하위는 마크업 파트에서 관리하고 있어 정적 분석 대상에서 제외한다.
+/src/assets/*
+
+# create-react-app으로 생성된 serviceWorker.js 제외
+/src/serviceWorker.js
+/public
+
+# 깃헙 관련 설정 파일들
+/.github

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "tsconfig/application.json",
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "$pages/*": ["pages/*"],
+            "$types/*": ["types/*"],
+            "$utils/*": ["utils/*"],
+            "$hocs/*": ["hocs/*"]
+        },
+        "typeRoots": ["./node_modules/@types", "./typings/**/*"],
+        "useDefineForClassFields": true,
+        "noImplicitAny": true,
+        "types": ["react", "@emotion/react/types/css-prop"]
+    },
+    "exclude": ["node_modules", "dist", "out", "__tests__"],
+    "include": ["src", "typings"],
+    "references": [{"path": "./tsconfig.node.json"}]
+}

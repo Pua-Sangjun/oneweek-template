@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": ["es2018"],
+        "allowJs": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "isolatedModules": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "moduleSuffixes": [".ios", ".android", ""],
+        "baseUrl": "./src",
+        "paths": {
+            "$commons/*": ["commons/*"],
+            "$constants/*": ["constants/*"],
+            "$contexts/*": ["contexts/*"],
+            "$fetch/*": ["fetch/*"],
+            "$hooks/*": ["hooks/*"],
+            "$screens/*": ["screens/*"],
+            "$webview/*": ["webview/*"],
+            "$storages/*": ["storages/*"],
+            "$utils/*": ["utils/*"],
+            "$assets/*": ["assets/*"]
+        }
+    },
+    "include": ["**/*.ts", "**/*.tsx", "**.tsx"],
+    "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig.json",
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "commonjs",
+        "sourceMap": false,
+        "typeRoots": ["./node_modules/@types", "./typings/**/*"],
+        "outDir": "dist/server"
+    },
+    "exclude": [
+        "server/*.test.ts",
+        "client/**/*.ts",
+        "client/**/*.tsx",
+        "node_modules",
+        "dist",
+        ".next",
+        "out",
+        "next.config.js",
+        "__tests__"
+    ],
+    "include": ["server/**/*.ts"]
+}

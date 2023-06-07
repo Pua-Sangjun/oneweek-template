@@ -1,0 +1,24 @@
+{
+    "name": "@oneweek-react/bridge",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "local:pkg": "rollup -w -c rollup.config.js",
+        "build:pkg": "rollup -c rollup.config.js && minify dist",
+        "clean": "rm -rf ./dist && rm -rf ./node_modules && rm -rf ./.turbo"
+    },
+    "author": "2-one-week",
+    "license": "ISC",
+    "devDependencies": {
+        "@oneweek/minify": "workspace:*",
+        "@oneweek/rollup-config": "workspace:*",
+        "@oneweek-react/theme": "workspace:*",
+        "rollup": "^2.77.2",
+        "tsconfig": "workspace:*",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.0"
+    },
+    "dependencies": {}
+}
