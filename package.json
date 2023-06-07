@@ -1,0 +1,38 @@
+{
+    "name": "oneweek-template",
+    "version": "1.0.0",
+    "description": "",
+    "packageManager": "pnpm@7.5.2",
+    "scripts": {
+        "local": "turbo run local",
+        "local:template": "turbo run local:template",
+        "start": "turbo run start",
+        "build": "turbo run build",
+        "clean": "turbo run clean",
+        "ios": "cd ./apps/mobile && npm run ios",
+        "aos": "cd ./apps/mobile && npm run android",
+        "lint": "eslint '**/*.{ts,tsx,js,jsx}'",
+        "lint:fix": "npm run lint -- --fix",
+        "prettier": "prettier '**/*.{json,yaml,yml,md}' --check",
+        "prettier:fix": "prettier '**/*.{json,yaml,yml,md}' --write",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/2-one-week/oneweek-template.git"
+    },
+    "dependencies": {
+        "eslint-config-yceffort": "^2.0.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "turbo": "^1.4.0",
+        "typescript": "^4.7.4"
+    },
+    "lint-staged": {
+        "**/*.{json,yaml,md}": "prettier --check",
+        "**/*.{js,jsx,ts,tsx}": "eslint"
+    }
+}

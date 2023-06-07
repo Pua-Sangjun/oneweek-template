@@ -1,0 +1,46 @@
+{
+    "project_info": {
+        "project_number": "862995621809",
+        "project_id": "oneweek-template",
+        "storage_bucket": "oneweek-template.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:862995621809:android:224ee8325290f6666bff90",
+                "android_client_info": {
+                    "package_name": "com.oneweek.template"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "862995621809-ln4ssp9ubqa40ja4mf7nt248u486htsk.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyCj7E4lBXGx5qlH9MnT4AiJwcXEMcPDLhU"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "862995621809-ln4ssp9ubqa40ja4mf7nt248u486htsk.apps.googleusercontent.com",
+                            "client_type": 3
+                        },
+                        {
+                            "client_id": "862995621809-uu9t7bk0o4aa1a3rhvrh5e5iqic6naqb.apps.googleusercontent.com",
+                            "client_type": 2,
+                            "ios_info": {
+                                "bundle_id": "com.oneweek.template"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

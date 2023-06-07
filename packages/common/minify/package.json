@@ -1,0 +1,13 @@
+{
+    "name": "@oneweek/minify",
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "bin": {
+        "minify": "index.js"
+    },
+    "dependencies": {
+        "glob": "^8.0.3"
+    }
+}

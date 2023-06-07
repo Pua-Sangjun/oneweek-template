@@ -1,0 +1,11 @@
+{
+    "extends": ["eslint-config-yceffort/typescript"],
+    "rules": {
+        "react/react-in-jsx-scope": ["off"],
+        // for react emotion
+        "react/no-unknown-property": ["error", {"ignore": ["css"]}]
+    },
+    "env": {
+        "jest": true
+    }
+}

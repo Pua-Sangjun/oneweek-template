@@ -1,0 +1,6 @@
+{
+    "extends": ["eslint-config-yceffort/typescript"],
+    "rules": {
+        "no-undef": "off"
+    }
+}
